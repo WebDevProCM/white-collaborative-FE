@@ -1,17 +1,31 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import {Roboto, Montserrat} from "next/font/google"
+// import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: "900",
+  display: "swap",
+  variable: '--font-roboto'
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+  variable: "--font-montserrat"
+})
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.variable} ${montserrat.variable}`}
       >
         {children}
       </body>
