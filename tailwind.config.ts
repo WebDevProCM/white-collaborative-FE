@@ -17,6 +17,7 @@ export default {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			homeBg: '#083344',
+  			homeboxGD: 'gradient-to-t from-gray-100 to-gray-300',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -54,6 +55,16 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
   		borderRadius: {
@@ -74,7 +85,7 @@ export default {
           'text-shadow': '3px 3px 6px rgba(0, 0, 0, 0.4)',
         },
         '.text-shadow-lg': {
-          'text-shadow': '4px 4px 8px rgba(0, 0, 0, 0.5)',
+          'text-shadow': '-5px -2px 5px rgba(0, 0, 0, 0.5)',
         },
       }
       addUtilities(newUtilities)
