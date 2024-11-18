@@ -19,13 +19,9 @@ function boardPage() {
           <Separator orientation="vertical" className="mr-2 h-4" />
           <MobileToolbar />
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-muted/50" />
-          </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+        <div className="flex p-1">
+          <canvas id="myCanvas" className="w-full h-full border-2 border-solid border-slate-400">
+          </canvas>
         </div>
       </SidebarInset>
     </SidebarProvider>
